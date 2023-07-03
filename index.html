@@ -6,30 +6,58 @@
     <title>Document</title>
 </head>
 <style>
+body{
+    margin: 0;
+}
+
 .section-fist-task {
     display: flex;
     position: relative;/**found an error in the  position:static; and replaced it with position:relative;**/
     margin: 0;
-    padding: 0;
-    justify-content: center; /** added for similarity with the example on the imaged **/
     background-color: rgb(200, 200, 200);
-    padding:70px; /** added for similarity with the example on the imaged **/
+    height: auto;
 }
 .section-fist-task-red-block {
-    position: static;/**found an error in the  position:relative; and replaced it with position:static;(It is not necessary to enter in the code)**/
+    position: absolute;/**found an error in the  position:relative; and replaced it with position:static;(It is not necessary to enter in the code)**/
     background-color: red;
     width: 250px;
     height: 250px;
-    margin-right: 133px;
-    margin-left: 29px;
+    left: 367px;
+    top: 141px ;
 }
 .section-fist-task-green-block {
-    position: static;/**found an error in the  position:fixed; and replaced it with position:static;(It is not necessary to enter in the code)**/
+    position: absolute;/**found an error in the  position:fixed; and replaced it with position:static;(It is not necessary to enter in the code)**/
     background-color: green;
     width: 250px;
     height: 250px;
-    margin-right: 29px;
+    right: 397px;
+    top: 141px;
 }
+
+/**
+.section-fist-task {
+display: flex;
+position: static;
+margin: 0;
+padding: 0;
+}
+.section-fist-task-red-block {
+position: relative;
+background-color: red;
+width: 250px;
+height: 250px;
+margin-left: 367px;
+margin-top: 141px ;
+}
+.section-fist-task-green-block {
+position: fixed;
+background-color: green;
+width: 250px;
+height: 250px;
+margin-right: 397px;
+margin-top: 141px;
+}
+**/
 
 
 </style>
@@ -38,7 +66,6 @@
     <section class="section-fist-task">
         <div class="section-fist-task-red-block"></div>
         <div class="section-fist-task-green-block"></div>
-
     </section>
 
 </body>
